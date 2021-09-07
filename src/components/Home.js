@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../assets/01.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   BsFillCameraVideoFill,
   BsCamera,
@@ -20,7 +21,10 @@ const Home = () => {
             <div className="home-intro-heading">
               <h1>Hi, I am Mukhammadrasul</h1>
               <h2>Frontend engineer with React.js framework</h2>
-              <button>View my work</button>
+
+              <Link to="/Projects">
+                <button>View my work</button>
+              </Link>
             </div>
           </motion.div>
           <motion.div
